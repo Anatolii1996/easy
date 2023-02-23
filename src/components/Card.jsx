@@ -1,6 +1,6 @@
 const Card = ({title, imageUrl}) => {
   return (
-    <div className="card app_card" >
+    <div  >
       <img src={imageUrl} className="card-img-top" alt="card-image" />
       <div className="card-body">
         <h5 className="card-title">{title}</h5>

@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import Card from "./Card";
+import { Link } from "react-router-dom";
 
 const Index = () => {
   const [posts, setPosts] = useState([]);
@@ -12,7 +13,11 @@ const Index = () => {
   return (
     <div className="app_content">
       {posts.map(({ title, imageUrl }) => {
-        return <Card title={title} imageUrl={imageUrl} key={imageUrl} />;
+        return (
+          <Link to="/card"  className="card app_card">
+            <Card title={title} imageUrl={imageUrl} key={imageUrl} />
+          </Link>
+        );
       })}
     </div>
   );
