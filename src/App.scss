@@ -44,3 +44,24 @@ body{
     display: block;
     width: 100%;
 }
+.detail_wrap{
+    padding: 121px 117px;
+    h1{
+        font-size: 36px;
+        font-weight: 700;
+        color: #FFFFFF;
+    }
+    img{
+        width: 100%;
+    }
+    p{
+        font-size: 17px;
+        font-weight: 500;
+        padding:30px 0 ;
+    }
+    .expert_comment{
+        background-color: #fff;
+        padding: 18px 19px 43px 35px;
+        font-weight: 700;
+    }
+}

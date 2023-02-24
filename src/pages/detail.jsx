@@ -15,12 +15,14 @@ const Detail = () => {
     }
   });
   return (
-    <div>
+    <div className="detail_wrap">
       <h1>{post.title}</h1>
-      <img src="" alt="" />
-      <p></p>
-      <h2></h2>
-      <p></p>
+      <img src={post.imageUrl} alt="image" />
+      <p>{post.description}</p>
+      <div className="expert_comment">
+          <h2>Expert comment</h2>
+          <p>{post.expertComment}</p>
+      </div>
     </div>
   );
 };
