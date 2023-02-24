@@ -23,6 +23,7 @@ const Detail = () => {
           <h2>Expert comment</h2>
           <p>{post.expertComment}</p>
       </div>
+      
     </div>
   );
 };
