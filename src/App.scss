@@ -17,7 +17,6 @@ body{
 }
 .app_card{
     width: 30%;
-    
     margin: 0 20px 20px;
     background-color: #112B3E;
     color: #FFFFFF;
@@ -27,6 +26,7 @@ body{
     &:hover{
         transform: scale(1.05);
         transition-duration: 0.5s;
+        z-index: 1;
     }
     .card-body{
         padding: 10px 0;
@@ -44,6 +44,7 @@ body{
     position: fixed;
     width: 100%;
     height: 80px;
+    z-index: 2;
     
     .navbar-brand{
         color: #FFFFFF;
