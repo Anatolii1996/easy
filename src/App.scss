@@ -83,7 +83,10 @@ body {
 }
 
 @media (max-width: 800px) {
-    .app_card {
-      width: 80%;
-    }
+  .app_card {
+    width: 80%;
   }
+  .detail_wrap {
+    padding: 121px 5%;
+  }
+}
