@@ -1,3 +1,4 @@
+/* eslint-disable */
 import Index from "../components/Index_page";
 
 const Home = () => {

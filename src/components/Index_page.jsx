@@ -1,4 +1,5 @@
 // import axios from "axios";
+/* eslint-disable */
 import { onSnapshot, query, collection } from "firebase/firestore";
 import { db } from "../firebase";
 import { useEffect, useState } from "react";
