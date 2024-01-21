@@ -1,79 +1,89 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;700&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    background-color: #839695;
-    font-family: 'Roboto Slab', serif;
+body {
+  background-color: #839695;
+  font-family: "Roboto Slab", serif;
 }
-.app_content{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-   padding-top: 110px;
+.app_content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-top: 110px;
 }
-.app_card{
-    width: 30%;
-    margin: 0 20px 20px;
-    background-color: #112B3E;
-    color: #FFFFFF;
+.app_card {
+  width: 30%;
+  margin: 0 20px 20px;
+  background-color: #112b3e;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 28px;
+  text-decoration: none;
+  &:hover {
+    transform: scale(1.05);
+    transition-duration: 0.5s;
+    z-index: 1;
+  }
+  .card-body {
+    padding: 10px 5px;
+  }
+  .card-title {
+    text-align: center;
     font-weight: 700;
     font-size: 28px;
-    text-decoration: none;
-    &:hover{
-        transform: scale(1.05);
-        transition-duration: 0.5s;
-        z-index: 1;
-    }
-    .card-body{
-        padding: 10px 5px;
-    }
-    .card-title{
-        text-align: center;
-        font-weight: 700;
-        font-size: 28px;
-        
-        
-    }
+  }
 }
-.header{
-    background-color: #112B3E !important;
-    position: fixed;
+.header {
+  background-color: #112b3e !important;
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  z-index: 2;
+
+  .navbar-brand {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 36px;
+  }
+}
+.block {
+  display: block;
+  width: 100%;
+}
+.detail_wrap {
+  padding: 121px 117px;
+  h1 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #ffffff;
+  }
+  img {
     width: 100%;
-    height: 80px;
-    z-index: 2;
-    
-    .navbar-brand{
-        color: #FFFFFF;
-        font-weight: 700;
-        font-size: 36px;
-    }
+  }
+  p {
+    font-size: 17px;
+    font-weight: 500;
+    padding: 30px 0;
+  }
+  .expert_comment {
+    background-color: #fff;
+    padding: 18px 19px 43px 35px;
+    font-weight: 700;
+  }
 }
-.block{
-    display: block;
-    width: 100%;
+
+@media (max-width: 1100px) {
+  .app_card {
+    width: 45%;
+  }
 }
-.detail_wrap{
-    padding: 121px 117px;
-    h1{
-        font-size: 36px;
-        font-weight: 700;
-        color: #FFFFFF;
+
+@media (max-width: 800px) {
+    .app_card {
+      width: 80%;
     }
-    img{
-        width: 100%;
-    }
-    p{
-        font-size: 17px;
-        font-weight: 500;
-        padding:30px 0 ;
-    }
-    .expert_comment{
-        background-color: #fff;
-        padding: 18px 19px 43px 35px;
-        font-weight: 700;
-    }
-}
+  }
